@@ -1,0 +1,86 @@
+.page {
+    padding-top: 120px; /* space for fixed navbar */
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    font-family: 'Segoe UI', sans-serif;
+    background: url('https://plus.unsplash.com/premium_photo-1671456124445-b59629db1bf6?q=80&w=2006&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center top;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .header {
+    font-size: 3rem;
+    color: goldenrod;
+    
+    text-align: left;
+    margin-bottom: 30px;
+  }
+  
+  .product-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 16px;
+    width: 250px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  }
+  
+  .product-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 12px;
+  }
+  
+  .card h2 {
+    margin: 0 0 8px;
+    font-size: 18px;
+  }
+  
+  .card .price {
+    margin: 0 0 10px;
+    color: #0077ff;
+    font-weight: 600;
+  }
+  
+  .card .desc {
+    flex: 1 1 auto;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #555;
+  }
+  
+  .card button {
+    margin-top: 16px;
+    padding: 10px 0;
+    border: none;
+    background: #0077ff;
+    color: white;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .card button:hover {
+    background: #005ecb;
+  }
+  
